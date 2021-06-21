@@ -1,0 +1,35 @@
+{
+  "name": "crypt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "make run",
+    "test": "make test",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/cli": "^0.1.50",
+    "@swc/core": "^1.2.88",
+    "@types/big.js": "^6.1.1",
+    "@types/jest": "^27.0.1",
+    "husky": "^7.0.1",
+    "jest": "^27.2.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "big.js": "^6.1.1",
+    "enquirer": "^2.3.6",
+    "exceljs": "^4.3.0",
+    "fast-csv": "^4.3.6"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
